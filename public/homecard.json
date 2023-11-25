@@ -1,0 +1,23 @@
+[
+    {
+        "id" : 1,
+        "name" : "Alphabet Learning",
+        "description" : "Teaching children the alphabet is fundamental in early education.",
+        "image" : "HomeImage/1.png"
+        
+
+    },
+    {
+        "id" : 2,
+        "name" : "Numeracy Skills Development",
+        "description" : "Early introduction to basic numeracy skills lays a strong foundation for a child's mathematical understanding.",
+        "image" : "HomeImage/2.png"
+
+    },
+    {
+        "id" : 3,
+        "name" : "Early Programming Concepts",
+        "description" : "Introducing basic programming concepts to children in a fun and accessible manner can enhance their logical thinking and problem-solving abilities.",
+        "image" : "HomeImage/3.png"
+    }
+]
