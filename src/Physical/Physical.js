@@ -50,10 +50,10 @@ const Physical = ({ courses }) => {
                 />
             </div>
 
-            <div className="flex justify-center items-start flex-wrap -m-4">
+            <div className="grid grid-flow-row grid-cols-2 gap-2 w-full max-w-6xl mx-auto mt-6">
                 {currentCourses.map((course) => (
-                    <div key={course.id} className="p-4" style={{ width: '28rem' }}>
-                        <Card style={{ width: '25rem', height: '550px' }}>
+                    <div key={course.id}>
+                        <Card style={{ width: '23rem', height: '550px' }}>
                             <Card.Img variant="top" src={course.image} />
                             <Card.Body>
                                 <Card.Title>{course.name}</Card.Title>
