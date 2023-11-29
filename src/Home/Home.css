@@ -1,0 +1,171 @@
+.carousel-item > img {
+    height: 500px; 
+  }
+
+  .read-more-btn {
+    width: 100px;
+    background-color: white;
+    color: blue;
+    border: 2px solid white; 
+  }
+  @font-face {
+    font-family: 'MyCustomFont'; 
+    src: url('/public/fonts/LightBearer.ttf') format('truetype'); 
+    
+  }
+  @font-face {
+    font-family: 'ActFont';
+    src: url('/public/fonts/HoneyBiscuit.ttf') format('truetype');
+
+  }
+
+  .MyCustomFont {
+    padding-top: 30px;
+    font-family: 'MyCustomFont';
+    font-size: 80px;
+  }
+  .activitiesfont {
+    font-family: 'ActFont';
+    font-size: 75px;
+    color: black;
+    /* text-shadow: 0 0 10px #fff; */
+    text-align: left;
+    /* -webkit-text-stroke:  0.2px white; */
+    padding-left: 100px;
+    
+    
+  }
+
+  .cardnamefont{
+    font-family: 'ActFont';
+    -webkit-text-stroke:  0.5px black;
+    color: white !important;
+    
+    
+
+  }
+
+  .card-title{
+    
+    font-size: 28px !important; 
+  }
+
+  h1.hs1 {
+    font-size: 75px;
+    font-family: 'ActFont';
+    -webkit-text-stroke:  0.2px white;
+  }
+
+
+  h2.hs2{
+    font-size: 50px;
+    font-family: 'ActFont';
+    -webkit-text-stroke:  0.2px white;
+    color: rgb(247, 247, 144);
+    /* text-align: left ; */
+  }
+
+  h3.hs3{
+    font-size: 30px;
+    font-family: 'ActFont';
+    -webkit-text-stroke:  0.2px white;
+    /* color: rgb(247, 247, 144); */
+    /* text-align: left ; */
+  }
+  h4.hs4{
+    font-size: 20px;
+    -webkit-text-stroke:  0.01px white;
+    /* font-family: 'ActFont'; */
+    /* color: rgb(247, 247, 144); */
+    /* text-align: left ; */
+  }
+
+  
+
+  .custombackground{
+    margin-top: 50px;
+    background-image: url("/public/HomeImage/background.jpg") ;
+    height: 750px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .row {
+    display: flex;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    padding: 90px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  .KidImage{
+    height: 600px;
+  }
+
+  @font-face {
+    font-family: 'ChooseFont';
+    src: url('/public/fonts/LittleBoy.ttf') format('truetype');
+  }
+
+
+  .choosef {
+    font-family: 'ChooseFont';
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 100px ;
+    
+  }
+
+  h1.hp1{
+    font-size: 70px;
+  }
+
+  h2.hp2 {
+    font-size: 50px;
+
+  }
+
+  .kidstudyimage{
+    padding-left: 80px;
+    padding-top: 150px ;
+    height: 600px;
+  } 
+
+  .flex-grow-1 {
+    -webkit-text-stroke: 0.05px black;
+    /* color: white; */
+    flex-grow: 1;
+    font-size: 17px;
+  }
+
+  .carousel-item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Đen trong suốt */
+  }
+  
+  /* Đảm bảo kích thước và vị trí của .carousel-item là tương thích */
+  .carousel-item {
+    position: relative;
+  }
+
+
+  .footer{
+    margin-top: 450px;
+    background-color: rgb(18, 28, 165);
+    height: 300px;
+    
+    
+  }
+  .staff{
+    font-size: 30px;
+    padding-top: 10px;
+  }

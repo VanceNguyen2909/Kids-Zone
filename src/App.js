@@ -3,13 +3,18 @@ import './App.css';
 import { Link, Route, Routes } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Home from './Home/Home';
+import Navb from './NavBar/NavBar';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Physical from './Physical/Physical';
 
 function App() {
 
   
+
+  const [cards, setCards] = useState([]);
+  const [filterCards, setFilterCards] = useState([]);
 
   const [courses, setCourses] = useState([]);
   const [filterCourses, setFilterCourses] = useState([]);
@@ -17,14 +22,21 @@ function App() {
   useEffect( () => {
     const fetchData = async () => {
       try{
-        const courseJson = await fetch('homecard.json')
+        const cardJson = await fetch('homecard.json')
+        const cardData = await cardJson.json();
+        setCards(cardData);
+        setFilterCards(cardData);
+        // console.log(22, courseData)
+
+        const courseJson = await fetch('courses.json')
         const courseData = await courseJson.json();
+        setCourses(courseData)
+        setFilterCourses(courseData)
 
 
         
-        setCourses(courseData);
-        setFilterCourses(courseData);
-        // console.log(22, courseData)
+
+
         
       }catch (error){
         console.log('error reading json')
@@ -41,13 +53,22 @@ function App() {
     <div className="App">
       
       <nav>
-        <Link to="/" >Home</Link>
-
+        {/* <Link to="/" >Home</Link>
+        <Link to="/physicalpage" >Physical Page</Link>
+        <Link to="/videopage" >Video Page</Link>
+        <Link to="/eventpage" >Event Page</Link>
+        <Link to="/gallery" >Gallery</Link> */}
+        <Navb/>
       </nav>
       <Routes>
         <Route path='/' element={
           <div>
-            <Home courses={filterCourses} />
+            <Home cards={filterCards} />
+          </div>
+        } />
+        <Route path='/physical' element={
+          <div>
+            <Physical courses={filterCourses} />
           </div>
         } />
       </Routes>
