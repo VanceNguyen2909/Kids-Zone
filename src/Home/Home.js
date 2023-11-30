@@ -7,6 +7,7 @@ import './Home.css'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Footer from '../Footer/Footer';
 
 
 
@@ -73,7 +74,7 @@ function Home({ cards }) {
                 </Carousel.Item>
             </Carousel>
 
-            <h1 className='MyCustomFont'> Skill Learning</h1>
+            <h1 className='MyCustomFont'>Skill Learning</h1>
             <div className="flex justify-center items-start flex-wrap -m-4">
                 {cards.map((card) => (
                     <div key={card.id} className="p-4" style={{ width: '28rem' }}>
@@ -207,9 +208,13 @@ function Home({ cards }) {
                 </div>
             </div> */}
 
-            <div className='footer'>
+            {/* <div className='footer'>
 
-            </div>
+            </div> */}
+
+            
+
+            <Footer/>
 
 
 

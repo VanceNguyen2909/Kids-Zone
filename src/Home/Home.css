@@ -118,6 +118,7 @@
     text-align: left;
     padding-left: 100px;
     padding-top: 100px ;
+    padding-bottom: 30px;
     
   }
 
@@ -134,6 +135,7 @@
     padding-left: 80px;
     padding-top: 150px ;
     height: 600px;
+    padding-bottom: 30px;
   } 
 
   .flex-grow-1 {
@@ -158,14 +160,31 @@
   }
 
 
-  .footer{
-    margin-top: 450px;
-    background-color: rgb(18, 28, 165);
-    height: 300px;
-    
-    
-  }
+  
   .staff{
     font-size: 30px;
     padding-top: 10px;
   }
+
+  .footer {
+    background: rgba(226, 248, 248, 0.664);
+    margin-top: 30px;
+}
+
+.follows span a {
+    text-decoration: none;
+}
+
+.follows span {
+    margin-right: 15px;
+}
+
+.link__list .link__item {
+    background: transparent;
+}
+
+.link__list a {
+    text-decoration: none;
+    color: #0a2b1e;
+    font-weight: 500;
+}

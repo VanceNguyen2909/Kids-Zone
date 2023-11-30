@@ -8,10 +8,12 @@ import Navb from './NavBar/NavBar';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Physical from './Physical/Physical';
+import Footer from './Footer/Footer';
+// import Footer from './Footer/Footer';
 
 function App() {
 
-  
+
 
   const [cards, setCards] = useState([]);
   const [filterCards, setFilterCards] = useState([]);
@@ -19,9 +21,9 @@ function App() {
   const [courses, setCourses] = useState([]);
   const [filterCourses, setFilterCourses] = useState([]);
 
-  useEffect( () => {
+  useEffect(() => {
     const fetchData = async () => {
-      try{
+      try {
         const cardJson = await fetch('homecard.json')
         const cardData = await cardJson.json();
         setCards(cardData);
@@ -34,31 +36,31 @@ function App() {
         setFilterCourses(courseData)
 
 
-        
 
 
-        
-      }catch (error){
+
+
+      } catch (error) {
         console.log('error reading json')
       }
     };
     fetchData();
   }, []);
 
-  
+
 
 
 
   return (
     <div className="App">
-      
+
       <nav>
         {/* <Link to="/" >Home</Link>
         <Link to="/physicalpage" >Physical Page</Link>
         <Link to="/videopage" >Video Page</Link>
         <Link to="/eventpage" >Event Page</Link>
         <Link to="/gallery" >Gallery</Link> */}
-        <Navb/>
+        <Navb />
       </nav>
       <Routes>
         <Route path='/' element={
@@ -71,8 +73,12 @@ function App() {
             <Physical courses={filterCourses} />
           </div>
         } />
+        
+
+
+        
       </Routes>
-      
+
     </div>
   );
 }

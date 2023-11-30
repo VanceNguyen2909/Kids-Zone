@@ -75,7 +75,7 @@
         "name" : "Importance of Daily Physical Activity for Kids",
         "description" : "Move and Groove: Benefits of Exercise for Growing Bodies",
         "category" : "Exercise",
-        "image" : "PhysicalImage/7.jpg"
+        "image" : "PhysicalImage/6.png"
     },
 
     {
@@ -83,7 +83,7 @@
         "name" : "Fun Outdoor Games and Activities for Exercise",
         "description" : "Outdoor Adventures: Exciting Games for Active Kids",
         "category" : "Exercise",
-        "image" : "PhysicalImage/7.jpg"
+        "image" : "PhysicalImage/6.png"
     },
 
     {
@@ -91,7 +91,7 @@
         "name" : "Benefits of Stretching and Flexibility Exercises",
         "description" : "Flexible Fun: Why Stretching Is Cool for Kids",
         "category" : "Exercise",
-        "image" : "PhysicalImage/7.jpg"
+        "image" : "PhysicalImage/6.png"
     },
 
     {
@@ -99,7 +99,7 @@
         "name" : "Exploring Different Types of Sports for Fitness",
         "description" : "Sporty Adventures: Finding the Perfect Fit for Your Active Kid",
         "category" : "Exercise",
-        "image" : "PhysicalImage/7.jpg"
+        "image" : "PhysicalImage/6.png"
     },
 
     {
@@ -107,7 +107,7 @@
         "name" : "Creating an Active Daily Routine: Walking, Running, and Playing",
         "description" : "Active Every Day: Making Exercise a Habit for Kids",
         "category" : "Exercise",
-        "image" : "PhysicalImage/7.jpg"
+        "image" : "PhysicalImage/6.png"
     },
 
     {
@@ -115,7 +115,7 @@
         "name" : "Indoor Exercises for Rainy Days or Winter Months",
         "description" : "Rain or Shine: Indoor Exercises to Keep Kids Moving",
         "category" : "Exercise",
-        "image" : "PhysicalImage/7.jpg"
+        "image" : "PhysicalImage/6.png"
     },
 
     {
@@ -123,7 +123,7 @@
         "name" : "Yoga and Mindfulness: Exercise for Body and Mind",
         "description" : "Zen Time: Yoga and Mindfulness for Kids",
         "category" : "Exercise",
-        "image" : "PhysicalImage/7.jpg"
+        "image" : "PhysicalImage/6.png"
     },
 
     {
@@ -131,7 +131,7 @@
         "name" : "Importance of Warm-ups and Cool-downs in Exercise",
         "description" : "Ready, Set, Go! The Importance of Warming Up and Cooling Down",
         "category" : "Exercise",
-        "image" : "PhysicalImage/7.jpg"
+        "image" : "PhysicalImage/6.png"
     },
 
     {
@@ -139,7 +139,7 @@
         "name" : "Team Sports and the Value of Cooperation and Teamwork",
         "description" : "Team Tales: The Power of Playing Together in Sports",
         "category" : "Exercise",
-        "image" : "PhysicalImage/7.jpg"
+        "image" : "PhysicalImage/6.png"
     },
 
     {
@@ -147,7 +147,7 @@
         "name" : "Dance and Movement: Fun Ways to Stay Fit",
         "description" : "Dance Party: Move and Groove to Fitness Fun",
         "category" : "Exercise",
-        "image" : "PhysicalImage/7.jpg"
+        "image" : "PhysicalImage/6.png"
     }
 
 ]
