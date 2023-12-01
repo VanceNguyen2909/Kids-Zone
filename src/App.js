@@ -60,7 +60,7 @@ function App() {
         <Link to="/videopage" >Video Page</Link>
         <Link to="/eventpage" >Event Page</Link>
         <Link to="/gallery" >Gallery</Link> */}
-        <Navb />
+        <Navb /> 
       </nav>
       <Routes>
         <Route path='/' element={

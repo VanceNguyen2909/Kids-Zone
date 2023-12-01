@@ -2,3 +2,13 @@
     
     color: black;
 }
+@font-face {
+    font-family: "titlefont";
+    src: url('/public/fonts/LightBearer.ttf');
+}
+
+.title{
+    font-family: "titlefont" ;
+    padding-top: 40px ;
+    font-size: 60px;    
+}

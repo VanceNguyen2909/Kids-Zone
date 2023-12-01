@@ -26,17 +26,12 @@ function Navb() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/physical">Physical</Nav.Link>
             <Nav.Link href="#link">Video Page</Nav.Link>
-            <Nav.Link href="#link">Event Page</Nav.Link>
-            <Nav.Link href="#link">Gallery</Nav.Link>
+            {/* <Nav.Link href="#link">Event Page</Nav.Link> */}
+            {/* <Nav.Link href="#link">Gallery</Nav.Link> */}
             <NavDropdown title="Pages" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">About us</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
+                Contact Us
               </NavDropdown.Item>
             </NavDropdown>
             {location.pathname === '/physical' && (
