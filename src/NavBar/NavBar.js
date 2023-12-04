@@ -7,7 +7,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { setSearchKey } from '../App/Modules/Search/search.slice';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-
+import { checkIsLoggedIn } from '../helpers/auth';
 function Navb() {
   const location = useLocation();
   const dispatch = useDispatch();
@@ -18,9 +18,12 @@ function Navb() {
     // console.log("search", search_key)
   };
 
+  const isLoggedIn = checkIsLoggedIn();
+
+
   return (
     
-    <Navbar expand="lg" className="bg-body-tertiary fixed-top ">
+    <Navbar expand="lg" className="bg-body-tertiary fixed-top">
       <Container fluid>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -30,18 +33,18 @@ function Navb() {
             navbarScroll
           >
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/physical">Physical</Nav.Link>
+            {/* Hiển thị liên kết Physical chỉ khi người dùng đã đăng nhập */}
+            {isLoggedIn && <Nav.Link href="/physical">Physical</Nav.Link>}
             <Nav.Link href="#link">Video Page</Nav.Link>
             <NavDropdown title="Pages" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">About Us</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Contact
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#action4">Contact</NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Form className="d-flex">
-            <Button variant="outline-success" href='/inf'>Login</Button>
-          </Form>
+          {/* Chỉ hiển thị nút Login khi người dùng chưa đăng nhập */}
+          {!isLoggedIn && (
+            <Button variant="outline-success" href="/login">Login</Button>
+          )}
         </Navbar.Collapse>
       </Container>
     </Navbar>

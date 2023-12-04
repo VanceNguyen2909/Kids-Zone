@@ -2,9 +2,11 @@ import './LoginSignUp.css'
 import React from 'react';
 import { ToastContainer,toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useHistory } from 'react-router-dom';
+import {useNavigate} from 'react-router-dom'
 
 function LoginSignUp() {
+
+    const history = useNavigate();
 
     
 
@@ -47,6 +49,8 @@ function LoginSignUp() {
             const userDetails = JSON.parse(user);
             if (password === userDetails.password) {
                 toast.success("Login Successful");
+                localStorage.setItem('isLoggedIn', 'true'); // Set login status in localStorage
+                history('/'); // Navigate to the home page after successful login
             } else {
                 toast.error('Incorrect password!');
             }
