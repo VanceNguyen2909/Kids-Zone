@@ -6,8 +6,9 @@ import Card from 'react-bootstrap/Card';
 import './Physical.css'
 import { Form } from "react-bootstrap";
 import { useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch  } from 'react-redux';
 import Select from 'react-select';
+import { setSearchKey } from '../App/Modules/Search/search.slice';
 
 const CardsPerPage = 4;
 
@@ -16,6 +17,7 @@ const Physical = ({ courses }) => {
     const [searchTerm, setSearchTerm] = useState("");
     const search_key = useSelector((state) => state.search.search_key);
     const [selectedCategories, setSelectedCategories] = useState([]);
+    const dispatch = useDispatch();
 
     // Số lượng Card mỗi trang, điều chỉnh tùy ý
     const CardsPerPage = 6;
@@ -26,8 +28,7 @@ const Physical = ({ courses }) => {
     const getFilteredCourses = () => {
         return courses.filter((course) => {
             const matchCategory = selectedCategories.length === 0 || selectedCategories.includes(course.category);
-            const matchSearch = course.name.toLowerCase().includes(search_key.toLowerCase()) ||
-                course.category.toLowerCase().includes(search_key.toLowerCase());
+            const matchSearch = course.name.toLowerCase().includes(search_key.toLowerCase()) 
             return matchCategory && matchSearch;
         });
     };
@@ -39,11 +40,12 @@ const Physical = ({ courses }) => {
 
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
+    
+
     const handleSearchChange = (event) => {
-        setSearchTerm(event.target.value);
-        // Reset về trang đầu tiên sau khi lọc
-        setCurrentPage(1);
-    };
+        dispatch(setSearchKey({ "search_key": event.target.value}))
+        // console.log("search", search_key)
+      };
 
     const handleCategoryChange = (selectedOptions) => {
         setSelectedCategories(selectedOptions.map(option => option.value));
@@ -68,17 +70,7 @@ const Physical = ({ courses }) => {
 
 
             {/* Search bar container */}
-            {/* <div className="flex justify-center mb-8 ">
-                <input
-                    type="text"
-                    placeholder="Search courses..."
-                    value={searchTerm}
-                    onChange={handleSearchChange}
-                    
-                    className="shadow appearance-none border rounded py-2 px-3 text-grey-darker w-[400px] rounded-pill"
-                />
-                
-            </div> */}
+           
 
 
 
@@ -88,9 +80,20 @@ const Physical = ({ courses }) => {
                 <h1 className='title' >Physical Course For Kids</h1>
 
                 <div className="flex justify-center mb-8 ">
+                <div className="flex justify-center mb-8 ">
+                <input
+                    type="text"
+                    placeholder="Search courses..."
+                    value={search_key}
+                    onChange={handleSearchChange}
+                    
+                    className="shadow appearance-none border rounded py-2 px-3 text-grey-darker w-[400px] rounded-pill"
+                />
+                
+            </div>
 
                 </div>
-                <div className="flex justify-center mb-8    "  >
+                <div className="flex justify-center mt-8    "  >
                     <Select
                         isMulti
                         options={categoryOptions}

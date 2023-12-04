@@ -4,11 +4,13 @@ import { Link, Route, Routes } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Home from './Home/Home';
 import Navb from './NavBar/NavBar';
+import AuthForm from './User/test';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Physical from './Physical/Physical';
 import Footer from './Footer/Footer';
+import LoginSignUp from './Login/LoginSignUp';
 // import Footer from './Footer/Footer';
 
 function App() {
@@ -74,6 +76,11 @@ function App() {
           </div>
         } />
         
+        <Route path='/inf' element={
+          <div>
+            <LoginSignUp/>
+          </div>
+        }/>
 
 
         

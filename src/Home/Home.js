@@ -48,7 +48,7 @@ function Home({ cards }) {
                         className="d-block w-100"
                         src="HomeImage\5.jpg"
                         alt="Second slide"
-                        style={{ height: '900px', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
+                        style={{ height: '900px' }}
 
                     />
                     <Carousel.Caption>
@@ -76,7 +76,9 @@ function Home({ cards }) {
 
             <h1 className='MyCustomFont'>Skill Learning</h1>
             <div className="flex justify-center items-start flex-wrap -m-4">
-                {cards.map((card) => (
+                {cards.map((card) => 
+                (
+                
                     <div key={card.id} className="p-4" style={{ width: '28rem' }}>
 
                         <Card style={{ height: '650px', backgroundColor: `${card.background}`, borderRadius: "40px" }}

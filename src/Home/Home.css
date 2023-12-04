@@ -78,6 +78,7 @@
     /* font-family: 'ActFont'; */
     /* color: rgb(247, 247, 144); */
     /* text-align: left ; */
+    max-width: 100%;
   }
 
   
@@ -188,3 +189,4 @@
     color: #0a2b1e;
     font-weight: 500;
 }
+
