@@ -5,10 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import {useNavigate} from 'react-router-dom'
 
 function LoginSignUp() {
-
     const history = useNavigate();
-
-    
 
     const toggleActiveClass = (isActive) => {
         if (isActive) {
