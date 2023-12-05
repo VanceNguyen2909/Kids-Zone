@@ -8,6 +8,9 @@ import { setSearchKey } from '../App/Modules/Search/search.slice';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { checkIsLoggedIn } from '../helpers/auth';
+import Dropdown from 'react-bootstrap/Dropdown';
+import SettingsIcon from '@mui/icons-material/Settings';
+
 function Navb() {
   const location = useLocation();
   const dispatch = useDispatch();
@@ -33,7 +36,7 @@ function Navb() {
             navbarScroll
           >
             <Nav.Link href="/">Home</Nav.Link>
-            {/* Hiển thị liên kết Physical chỉ khi người dùng đã đăng nhập */}
+            {/* Display Physical link only when user is logged in */}
             {isLoggedIn && <Nav.Link href="/physical">Physical</Nav.Link>}
             <Nav.Link href="#link">Video Page</Nav.Link>
             <NavDropdown title="Pages" id="navbarScrollingDropdown">
@@ -41,15 +44,28 @@ function Navb() {
               <NavDropdown.Item href="#action4">Contact</NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          {/* Chỉ hiển thị nút Login khi người dùng chưa đăng nhập */}
-          {!isLoggedIn && (
-            <Button variant="outline-success" href="/login">Login</Button>
-          )}
+
+          {/* The Dropdown button */}
+          <Dropdown>
+            <Dropdown.Toggle variant="success" id="dropdown-basic" className='rounded-circle'>
+              User
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              {!isLoggedIn ? (
+                <Dropdown.Item href="/inf">Login</Dropdown.Item>
+              ) : (
+                
+                <Dropdown.Item href="/logout">Logout</Dropdown.Item>
+              )}
+            </Dropdown.Menu>
+          </Dropdown>
         </Navbar.Collapse>
       </Container>
     </Navbar>
     
   );
 }
+
 
 export default Navb;

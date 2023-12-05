@@ -11,6 +11,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Physical from './Physical/Physical';
 import Footer from './Footer/Footer';
 import LoginSignUp from './Login/LoginSignUp';
+import Logout from './Logout/Logout';
+import Profile from './profile';
 // import Footer from './Footer/Footer';
 
 function App() {
@@ -39,18 +41,12 @@ function App() {
 
 
 
-
-
-
       } catch (error) {
         console.log('error reading json')
       }
     };
     fetchData();
   }, []);
-
-
-
 
 
   return (
@@ -81,11 +77,17 @@ function App() {
             <LoginSignUp/>
           </div>
         }/>
-
-
-        
+        <Route path='/profile' element={
+          <div>
+            <Profile/>
+          </div>
+        }/>
+        <Route path='/logout' element={
+          <div>
+            <Logout/>
+          </div>
+        }/>
       </Routes>
-
     </div>
   );
 }
