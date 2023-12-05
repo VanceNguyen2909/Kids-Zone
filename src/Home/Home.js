@@ -138,8 +138,6 @@ function Home({ cards }) {
                                     <h4 className='activitiesfont hs4' > Offer a variety of puzzles such as crosswords, word searches, mazes, Sudoku, and riddles designed for different age groups. Create printable versions or interactive online versions</h4>
 
                                 </Col>
-
-
                                 <Col>
                                     <h3 className='activitiesfont hs3'>Storytime Adventures</h3>
                                     <h4 className='activitiesfont hs4' >Curate a collection of interactive stories, both classic and original, with colorful illustrations. Incorporate activities like fill-in-the-blank story templates or storytelling prompts for kids to create their narratives</h4>
@@ -155,17 +153,9 @@ function Home({ cards }) {
                             <Card.Img
                                 src='/HomeImage/sky4.png'
                             />
-
-                            {/* <img 
-                                className='KidImage'
-                                src='/HomeImage/sky4.png'  
-
-                            /> */}
                         </Col>
-
                     </Row>
                 </Container>
-
             </div>
 
 
