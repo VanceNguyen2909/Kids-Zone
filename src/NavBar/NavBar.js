@@ -39,8 +39,8 @@ function Navb() {
             {isLoggedIn && <Nav.Link href="/physical">Physical</Nav.Link>}
             <Nav.Link href="#link">Video Page</Nav.Link>
             <NavDropdown title="Pages" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">About Us</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Contact</NavDropdown.Item>
+              <NavDropdown.Item href="/About">About Us</NavDropdown.Item>
+              <NavDropdown.Item href="/Contact">Contact</NavDropdown.Item>
             </NavDropdown>
           </Nav>
 

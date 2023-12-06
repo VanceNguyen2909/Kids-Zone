@@ -13,31 +13,40 @@ import Footer from './Footer/Footer';
 import LoginSignUp from './Login/LoginSignUp';
 import Logout from './Logout/Logout';
 import Profile from './profile';
+import BlogPost from './Physical/BlogPost';
 // import Footer from './Footer/Footer';
+import AboutUs from './Pages/AboutUs/About';
+import Contact from './Pages/Contact/Contact';
 
 function App() {
 
 
-
+  // get data from homecard.json
   const [cards, setCards] = useState([]);
   const [filterCards, setFilterCards] = useState([]);
-
+  // get data from courses.json
   const [courses, setCourses] = useState([]);
   const [filterCourses, setFilterCourses] = useState([]);
+  
+
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const cardJson = await fetch('homecard.json')
+        // get data from homecard.json
+        const cardJson = await fetch('homecard.json');
         const cardData = await cardJson.json();
         setCards(cardData);
         setFilterCards(cardData);
         // console.log(22, courseData)
-
-        const courseJson = await fetch('courses.json')
+        
+        // get data from courses.json
+        const courseJson = await fetch('courses.json');
         const courseData = await courseJson.json();
-        setCourses(courseData)
-        setFilterCourses(courseData)
+        setCourses(courseData);
+        setFilterCourses(courseData);
+
+        
 
 
 
@@ -71,7 +80,7 @@ function App() {
             <Physical courses={filterCourses} />
           </div>
         } />
-        
+        <Route path="/physical/:id" element={<BlogPost />} />
         <Route path='/inf' element={
           <div>
             <LoginSignUp/>
@@ -87,6 +96,16 @@ function App() {
             <Logout/>
           </div>
         }/>
+        <Route path='/About' element={
+          <div>
+            <AboutUs/>
+          </div>
+        } />
+        <Route path='/Contact' element={
+          <div>
+            <Contact/>
+          </div>
+        } />
       </Routes>
     </div>
   );

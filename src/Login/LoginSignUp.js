@@ -67,7 +67,7 @@ function LoginSignUp() {
                         <input type="text" placeholder="Name" required></input>
                         <input type="email" placeholder="Email" required></input>
                         <input type="password" placeholder="Password" required></input>
-                        <button type="submit">Sign Up</button>
+                        <button type="submit" >Sign Up</button>
                     </form>
                     
                 </div>

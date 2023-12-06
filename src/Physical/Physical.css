@@ -7,8 +7,103 @@
     src: url('/public/fonts/LightBearer.ttf');
 }
 
+@font-face {
+    font-family: 'Physfont';
+    src: url('/public/fonts/HoneyBiscuit.ttf') format('truetype');
+  
+}
+
+
+  .cardfont{
+    font-family: 'Physfont' ;
+    -webkit-text-stroke:  0.5px white;
+
+  }
+
+  .BGCard{
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  }
+  
+
 .title{
     font-family: "titlefont" ;
     padding-top: 40px ;
     font-size: 60px;    
+}
+.hl1{
+    padding-top: 30px;
+}
+.hl2{
+    padding-top: 40px;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.hl3{
+    padding-top: 50px;
+    padding-left: 30px;
+    text-align: left;
+}
+.hl5{
+    padding-left: 30px; 
+    text-align: left;
+    font-size: 20px;
+}
+.hl6{
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.PhysicBG{
+    background-image: url("/public/PhysicalImage/physicalbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 200px;
+    
+}
+.BGBlog{
+    
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    width: 1800px;
+
+}
+
+@media (max-width: 767px){
+    .card-title {
+        font-size: 15px !important;
+    }
+    .card{
+        max-height: 450px;
+    }
+    .flex-grow{
+        font-size: 11px;
+    }
+    .grid .col-span-1 .Card .Card.Body .Button {
+        width: 45%; /* Reduce the width a bit */
+        height: auto;
+    }
+
+}
+@media (max-width: 320px){
+    .card-title {
+        font-size: 13px !important;
+    }
+    .card{
+        max-height: 450px;
+    }
+    .flex-grow{
+        font-size: 10px;
+    }
+    .grid .col-span-1 .Card .Card.Body .Button {
+        width: 45%; /* Reduce the width a bit */
+        height: auto;
+    }
+    
 }

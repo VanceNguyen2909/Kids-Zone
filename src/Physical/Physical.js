@@ -9,6 +9,7 @@ import { useState } from 'react';
 import { useSelector, useDispatch  } from 'react-redux';
 import Select from 'react-select';
 import { setSearchKey } from '../App/Modules/Search/search.slice';
+import { useNavigate } from 'react-router';
 
 const CardsPerPage = 4;
 
@@ -18,6 +19,7 @@ const Physical = ({ courses }) => {
     const search_key = useSelector((state) => state.search.search_key);
     const [selectedCategories, setSelectedCategories] = useState([]);
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     // Số lượng Card mỗi trang, điều chỉnh tùy ý
     const CardsPerPage = 6;
@@ -60,23 +62,17 @@ const Physical = ({ courses }) => {
 
     ];
 
+    const handleReadClick = (courseId) => {
+        navigate(`/physical/${courseId}`)
+    }
+
 
 
     return (
-        <div style={{ paddingTop: '200px' }}>
+        <div className='PhysicBG' >
 
 
-
-
-
-            {/* Search bar container */}
-           
-
-
-
-
-
-            <div className='w-full max-w-7xl mx-auto mt-6' style={{ backgroundColor: "whitesmoke", borderRadius: "30px" }}>
+            <div className='w-full max-w-7xl mx-auto mt-6 ' style={{ backgroundColor: "#E0FFFF	", borderRadius: "30px", paddingBottom: "10px", backgroundColor: "#E0FFFF", background : "linear-gradient(to right, #E0FFFF, #FFD6E0)" }}>
                 <h1 className='title' >Physical Course For Kids</h1>
 
                 <div className="flex justify-center mb-8 ">
@@ -113,14 +109,19 @@ const Physical = ({ courses }) => {
                     {currentCourses.map((course) => (
 
                         <div key={course.id} className='col-span-1 flex justify-around' style={{ marginTop: "90px", marginBottom: "30px" }}>
-                            <Card style={{ width: '23rem', height: '550px', display: 'flex', flexDirection: 'column', borderRadius: "50px" }} >
-                                <Card.Img variant="top" src={course.image} className="w-full" style={{ borderTopRightRadius: "30px", borderTopLeftRadius: "30px", }} />
+                            <Card className='BGCard' style={{ width: '23rem', height: '550px', display: 'flex', flexDirection: 'column', borderRadius: "50px" }} >
+                                <Card.Img 
+                                    variant="top" 
+                                    src={course.image} 
+                                    className="w-full " 
+                                    style={{ borderTopRightRadius: "30px", borderTopLeftRadius: "30px", }} 
+                                />
                                 <Card.Body className="d-flex flex-column" >
-                                    <Card.Title>{course.name}</Card.Title>
+                                    <Card.Title className="cardfont" style={{color: "black"}}>{course.name}</Card.Title>
                                     <Card.Text className="flex-grow">
                                         {course.description}
                                     </Card.Text>
-                                    <Button variant="primary" className="mt-auto w-50 self-center">Read</Button>
+                                    <Button variant="primary" className="mt-auto w-50 self-center " onClick={() => handleReadClick(course.id)}>Read</Button>
                                 </Card.Body>
                             </Card>
                         </div>
