@@ -114,7 +114,7 @@ const Physical = ({ courses }) => {
                                     variant="top" 
                                     src={course.image} 
                                     className="w-full " 
-                                    style={{ borderTopRightRadius: "30px", borderTopLeftRadius: "30px", }} 
+                                    style={{ borderTopRightRadius: "30px", borderTopLeftRadius: "30px", height: "40%" }} 
                                 />
                                 <Card.Body className="d-flex flex-column" >
                                     <Card.Title className="cardfont" style={{color: "black"}}>{course.name}</Card.Title>

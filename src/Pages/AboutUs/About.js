@@ -5,6 +5,9 @@ import "./about.css";
 
 const AboutUs = () => {
   return (
+    <div>
+    
+    
     <div className="abbody">
       <section>
       <Container>
@@ -67,6 +70,7 @@ At KIDSZONE, children are always respected to develop important 21st century ski
         
       </Container>
     </section>
+    </div>
     </div>
   );
 };

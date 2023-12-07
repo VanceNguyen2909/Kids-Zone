@@ -107,9 +107,9 @@ function Home({ cards }) {
                                 <Card.Text className="flex-grow-1" style={{ color: "white" }}>
                                     {card.description}
                                 </Card.Text>
-                                <div>
+                                {/* <div>
                                     <Button variant="primary" className="mt-auto w-50 ">Read More</Button>
-                                </div>
+                                </div> */}
                             </Card.Body>
                         </Card>
                     </div>

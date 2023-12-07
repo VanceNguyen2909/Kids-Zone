@@ -4,21 +4,21 @@
         "name" : "Importance of Eating Fruits and Vegetables Daily",
         "description" : "The Colorful Plate: Why Eating Fruits and Veggies Matters",
         "category" : "Nutrition",
-        "image" : "PhysicalImage/7.jpg"
+        "image" : "PhysicalImage/1.jpg"
     },
     {
         "id" : 2,
         "name" : "Benefits of Drinking Water for a Healthy Body",
         "description" : "Sip to Stay Healthy: The Magic of Water for Kids",
         "category" : "Nutrition",
-        "image" : "PhysicalImage/7.jpg"
+        "image" : "PhysicalImage/2.jpg"
     },
     {
         "id" : 3,
         "name" : "Understanding the Food Groups: Grains, Proteins, Fruits, Vegetables, and Dairy",
         "description" : "Food Groups Adventure: Exploring a Balanced Diet for Kids",
         "category" : "Nutrition",
-        "image" : "PhysicalImage/7.jpg"
+        "image" : "PhysicalImage/3.jpg"
     },
     
         
@@ -35,7 +35,7 @@
         "name" : "Fun Outdoor Games and Activities for Exercise",
         "description" : "Outdoor Adventures: Exciting Games for Active Kids",
         "category" : "Exercise",
-        "image" : "PhysicalImage/6.png"
+        "image" : "PhysicalImage/4.jpg"
     },
 
     {
@@ -43,7 +43,7 @@
         "name" : "Benefits of Stretching and Flexibility Exercises",
         "description" : "Flexible Fun: Why Stretching Is Cool for Kids",
         "category" : "Exercise",
-        "image" : "PhysicalImage/6.png"
+        "image" : "PhysicalImage/5.jpg"
     }
 
 ]

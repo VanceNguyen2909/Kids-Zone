@@ -1,14 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 import './contact.css'
-
+import { useState } from "react";
 const Contact = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const Wrapper = styled.section`
     padding: 9rem 0 5rem 0;
 
    
     }
   `;
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+
+
+    setIsSubmitted(true);
+
+
+    setTimeout(() => setIsSubmitted(false), 3000);
+  };
 
   return (
 
@@ -62,7 +73,7 @@ const Contact = () => {
           </div>
 
           <div class="contact-form">
-            <form>
+            <form onSubmit={handleSubmit}>
               <div>
                 <input type="text" class="form-control" placeholder="First Name" />
                 <input type="text" class="form-control" placeholder="Last Name" />
@@ -74,6 +85,11 @@ const Contact = () => {
               <textarea rows="5" placeholder="Message" class="form-control"></textarea>
               <input type="submit" class="send-btn" value="send message" />
             </form>
+            {isSubmitted && (
+              <div className="success-message">
+                Your message has been sent successfully!
+              </div>
+            )}
 
             <div>
               <img src="" alt="" />

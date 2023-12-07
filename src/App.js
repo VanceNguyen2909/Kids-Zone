@@ -17,6 +17,7 @@ import BlogPost from './Physical/BlogPost';
 // import Footer from './Footer/Footer';
 import AboutUs from './Pages/AboutUs/About';
 import Contact from './Pages/Contact/Contact';
+import Awareness from './Awareness/Awareness';
 
 function App() {
 
@@ -104,6 +105,11 @@ function App() {
         <Route path='/Contact' element={
           <div>
             <Contact/>
+          </div>
+        } />
+        <Route path='/Awareness' element={
+          <div>
+            <Awareness/>
           </div>
         } />
       </Routes>

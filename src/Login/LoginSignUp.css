@@ -154,11 +154,12 @@
     transform: translateX(-100%);
     border-radius: 0 150px 100px 0;
 }
+/* #512da8 */
 
 .auth-toggle{
-    background-color: #512da8;
+    background-color: palevioletred;
     height: 100%;
-    background: linear-gradient(to right, #5c6bc0, #512da8);
+    background: linear-gradient(to right, palevioletred, #512da8);
     color: #fff;
     position: relative;
     left: -100%;

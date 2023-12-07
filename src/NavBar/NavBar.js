@@ -35,9 +35,10 @@ function Navb() {
             navbarScroll
           >
             <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/Awareness">Awareness</Nav.Link>
             {/* Display Physical link only when user is logged in */}
             {isLoggedIn && <Nav.Link href="/physical">Physical</Nav.Link>}
-            <Nav.Link href="#link">Video Page</Nav.Link>
+            {/* <Nav.Link href="#link">Video Page</Nav.Link> */}
             <NavDropdown title="Pages" id="navbarScrollingDropdown">
               <NavDropdown.Item href="/About">About Us</NavDropdown.Item>
               <NavDropdown.Item href="/Contact">Contact</NavDropdown.Item>
