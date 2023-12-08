@@ -36,6 +36,7 @@ function Navb() {
           >
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/Awareness">Awareness</Nav.Link>
+            {/* <Nav.Link href="/Alphabet">Alphabet</Nav.Link> */}
             {/* Display Physical link only when user is logged in */}
             {isLoggedIn && <Nav.Link href="/physical">Physical</Nav.Link>}
             {/* <Nav.Link href="#link">Video Page</Nav.Link> */}

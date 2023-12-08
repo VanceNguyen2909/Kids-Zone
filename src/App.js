@@ -18,6 +18,7 @@ import BlogPost from './Physical/BlogPost';
 import AboutUs from './Pages/AboutUs/About';
 import Contact from './Pages/Contact/Contact';
 import Awareness from './Awareness/Awareness';
+import Abc from './Awareness/Abc';
 
 function App() {
 
@@ -28,6 +29,10 @@ function App() {
   // get data from courses.json
   const [courses, setCourses] = useState([]);
   const [filterCourses, setFilterCourses] = useState([]);
+  // get data from ABC.json
+  const  [alphabets, setAlphabets] = useState([]);
+  const [filterAlphabets, setFilterAlphabets] = useState([]);
+
   
 
 
@@ -46,6 +51,17 @@ function App() {
         const courseData = await courseJson.json();
         setCourses(courseData);
         setFilterCourses(courseData);
+
+        //get data from ABC.json
+        const alphabetJson = await fetch('ABC.json');
+        const alphabetData = await alphabetJson.json();
+        setAlphabets(alphabetData)
+        setFilterAlphabets(alphabetData)
+        console.log(57, alphabetData)
+
+
+        // console.log(100,filterAlphabets)
+
 
         
 
@@ -112,7 +128,13 @@ function App() {
             <Awareness/>
           </div>
         } />
+        <Route path='/Alphabet' element={
+          <div>
+              <Abc alphabets={filterAlphabets} />
+          </div>
+        } />
       </Routes>
+      
     </div>
   );
 }
