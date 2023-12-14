@@ -16,14 +16,14 @@ function Logout() {
         <div className='h-screen w-full flex items-center justify-center bg-blue-200'>
           <div className='bg-white p-8 rounded-lg shadow-lg text-center'>
             <h1 className='text-3xl font-roboto text-blue-800 mb-4'>
-              Bạn muốn đăng xuất ?
+              Are you sure ?
             </h1>
             <div className='mt-6'>
               <button
                 onClick={handleLogout}
                 className='py-2 px-4 bg-yellow-500 text-white font-semibold rounded-lg shadow-md hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-75'
               >
-                Đăng xuất
+                Logout
               </button>
             </div>
           </div>

@@ -19,6 +19,7 @@ import AboutUs from './Pages/AboutUs/About';
 import Contact from './Pages/Contact/Contact';
 import Awareness from './Awareness/Awareness';
 import Abc from './Awareness/Abc';
+import Color from './Awareness/Color';
 
 function App() {
 
@@ -32,6 +33,9 @@ function App() {
   // get data from ABC.json
   const  [alphabets, setAlphabets] = useState([]);
   const [filterAlphabets, setFilterAlphabets] = useState([]);
+  // get data from Color.json
+  const [colors, setColors] = useState([]);
+  const [filterColors, setFilterColors] = useState([]);
 
   
 
@@ -58,6 +62,12 @@ function App() {
         setAlphabets(alphabetData)
         setFilterAlphabets(alphabetData)
         console.log(57, alphabetData)
+
+        //get data from Color.json
+        const colorJson = await fetch('Color.json');
+        const colorData = await colorJson.json();
+        setColors(colorData);
+        setFilterColors(colorData);
 
 
         // console.log(100,filterAlphabets)
@@ -131,6 +141,11 @@ function App() {
         <Route path='/Alphabet' element={
           <div>
               <Abc alphabets={filterAlphabets} />
+          </div>
+        } />
+        <Route path='/Color' element={
+          <div>
+            <Color Colors={filterColors} />
           </div>
         } />
       </Routes>

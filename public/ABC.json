@@ -2,132 +2,159 @@
     {
         "id" : 1,
         "name" : "A",
-        "image" : "ABCImage/A.png"
+        "image" : "ABCImage/A.png",
+        "sound" : "ABCAudio/A.mp3"
+        
     },
     {
         "id" : 2,
         "name" : "B",
-        "image" : "ABCImage/B.png"
+        "image" : "ABCImage/B.png",
+        "sound" : "ABCAudio/B.mp3"
     },
     {
         "id" : 3,
         "name" : "C",
-        "image" : "ABCImage/C.png"
+        "image" : "ABCImage/C.png",
+        "sound" : "ABCAudio/C.mp3"
     },
     {
         "id" : 4,
         "name" : "D",
-        "image" : "ABCImage/D.png"
+        "image" : "ABCImage/D.png",
+        "sound" : "ABCAudio/D.mp3"
     },
     {
         "id" : 5,
         "name" : "E",
-        "image" : "ABCImage/E.png"
+        "image" : "ABCImage/E.png",
+        "sound" : "ABCAudio/E.mp3"
     },
     {
         "id" : 6,
         "name" : "F",
-        "image" : "ABCImage/F.png"
+        "image" : "ABCImage/F.png",
+        "sound" : "ABCAudio/F.mp3"
     },
     {
         "id" : 7,
         "name" : "G",
-        "image" : "ABCImage/G.png"
+        "image" : "ABCImage/G.png",
+        "sound" : "ABCAudio/G.mp3"
     },
     {
         "id" : 8,
         "name" : "H",
-        "image" : "ABCImage/H.png"
+        "image" : "ABCImage/H.png",
+        "sound" : "ABCAudio/H.mp3"
     },
     {
         "id" : 9,
         "name" : "I",
-        "image" : "ABCImage/I.png"
+        "image" : "ABCImage/I.png",
+        "sound" : "ABCAudio/I.mp3"
     },
     {
         "id" : 10,
         "name" : "J",
-        "image" : "ABCImage/J.png"
+        "image" : "ABCImage/J.png",
+        "sound" : "ABCAudio/J.mp3"
     },
     {
         "id" : 11,
         "name" : "K",
-        "image" : "ABCImage/K.png"
+        "image" : "ABCImage/K.png",
+        "sound" : "ABCAudio/K.mp3"
     },
     {
         "id" : 12,
         "name" : "L",
-        "image" : "ABCImage/L.png"
+        "image" : "ABCImage/L.png",
+        "sound" : "ABCAudio/L.mp3"
     },
     {
         "id" : 13,
         "name" : "M",
-        "image" : "ABCImage/M.png"
+        "image" : "ABCImage/M.png",
+        "sound" : "ABCAudio/M.mp3"
     },
     {
         "id" : 14,
         "name" : "N",
-        "image" : "ABCImage/N.png"
+        "image" : "ABCImage/N.png",
+        "sound" : "ABCAudio/N.mp3"
     },
     {
         "id" : 15,
         "name" : "O",
-        "image" : "ABCImage/O.png"
+        "image" : "ABCImage/O.png",
+        "sound" : "ABCAudio/O.mp3"
     },
     {
         "id" : 16,
         "name" : "P",
-        "image" : "ABCImage/P.png"
+        "image" : "ABCImage/P.png",
+        "sound" : "ABCAudio/P.mp3"
     },
     {
         "id" : 17,
         "name" : "Q",
-        "image" : "ABCImage/Q.png"
+        "image" : "ABCImage/Q.png",
+        "sound" : "ABCAudio/Q.mp3"
     },
     {
         "id" : 18,
         "name" : "R",
-        "image" : "ABCImage/R.png"
+        "image" : "ABCImage/R.png",
+        "sound" : "ABCAudio/R.mp3"
     },
     {
         "id" : 19,
         "name" : "S",
-        "image" : "ABCImage/S.png"
+        "image" : "ABCImage/S.png",
+        "sound" : "ABCAudio/S.mp3"
     },
     {
         "id" : 20,
         "name" : "T",
-        "image" : "ABCImage/T.png"
+        "image" : "ABCImage/T.png",
+        "sound" : "ABCAudio/T.mp3"
     },
     {
         "id" : 21,
         "name" : "U",
-        "image" : "ABCImage/U.png"
+        "image" : "ABCImage/U.png",
+        "sound" : "ABCAudio/U.mp3"
     },
     {
         "id" : 22,
         "name" : "V",
-        "image" : "ABCImage/V.png"
+        "image" : "ABCImage/V.png",
+        "sound" : "ABCAudio/V.mp3"
     },
     {
         "id" : 23,
         "name" : "W",
-        "image" : "ABCImage/W.png"
+        "image" : "ABCImage/W.png",
+        "sound" : "ABCAudio/W.mp3"
     },
     {
         "id" : 24,
         "name" : "X",
-        "image" : "ABCImage/X.png"
+        "image" : "ABCImage/X.png",
+        "sound" : "ABCAudio/X.mp3"
     },
     {
         "id" : 25,
         "name" : "Y",
-        "image" : "ABCImage/Y.png"
+        "image" : "ABCImage/Y.png",
+        "sound" : "ABCAudio/Y.mp3"
     },
     {
         "id" : 26,
         "name" : "Z",
-        "image" : "ABCImage/Z.png"
+        "image" : "ABCImage/Z.png",
+        "sound" : "ABCAudio/Z.mp3"
     }
 
 ]

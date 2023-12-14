@@ -55,7 +55,7 @@ const Footer = () => {
               <i class="ri-pantone-line"></i> KIDSZONE
             </h2>
 
-            <div className="follows">
+            {/* <div className="follows">
               <p className="mb-0">Follow us on social media</p>
               <span>
                 {" "}
@@ -84,7 +84,7 @@ const Footer = () => {
                   <i class="ri-twitter-line"></i>
                 </a>
               </span>
-            </div>
+            </div> */}
           </Col>
 
           <Col lg="3" md="6" className="mb-4">
@@ -114,7 +114,7 @@ const Footer = () => {
           <Col lg="3" md="6">
             <h6 className="fw-bold">Get in Touch</h6>
 
-            <p>Address: Quan 3, VietNam</p>
+            <p>Address: District 3, VietNam</p>
             <p> Phone: +84 0123456789 </p>
             <p>Email: example@gmail.com</p>
           </Col>

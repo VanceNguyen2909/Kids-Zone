@@ -1,0 +1,45 @@
+[
+    {
+        "id" : 1,
+        "name" : "BLACK",
+        "image" : "ColorImage/BLACK.jpg",
+        "sound" : "ColorAudio/black.mp3"
+        
+    },
+    {
+        "id" : 2,
+        "name" : "BLUE",
+        "image" : "ColorImage/BLUE.jpg",
+        "sound" : "ColorAudio/blue.mp3"
+    },
+    {
+        "id" : 3,
+        "name" : "GREEN",
+        "image" : "ColorImage/GREEN.jpg",
+        "sound" : "ColorAudio/green.mp3"
+    },
+    {
+        "id" : 4,
+        "name" : "ORANGE",
+        "image" : "ColorImage/ORANGE.jpg",
+        "sound" : "ColorAudio/orange.mp3"
+    },
+    {
+        "id" : 5,
+        "name" : "PINK",
+        "image" : "ColorImage/PINK.jpg",
+        "sound" : "ColorAudio/pink.mp3"
+    },
+    {
+        "id" : 6,
+        "name" : "RED",
+        "image" : "ColorImage/RED.jpg",
+        "sound" : "ColorAudio/red.mp3"
+    },
+    {
+        "id" : 7,
+        "name" : "YELLOW",
+        "image" : "ColorImage/YELLOW.jpg",
+        "sound" : "ColorAudio/yellow.mp3"
+    }
+]
